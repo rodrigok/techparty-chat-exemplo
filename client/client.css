@@ -1,0 +1,36 @@
+/* CSS declarations go here */
+.messages {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 200px;
+	bottom: 40px;
+	padding: 20px;
+	overflow: scroll;
+}
+
+.messages .username {
+	display: inline-block;
+	min-width: 100px;
+	text-align: right;
+}
+
+.users {
+	position: fixed;
+	top: 0;
+	width: 200px;
+	right: 0;
+	bottom: 0;
+	background-color: #eee;
+	padding: 20px;
+}
+
+.input {
+	position: fixed;
+	height: 40px;
+	left: 0;
+	right: 200px;
+	bottom: 0;
+	background-color: #ddd;
+	padding: 10px;
+}

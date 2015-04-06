@@ -1,0 +1,38 @@
+<head>
+  <title>exemplo2</title>
+</head>
+
+<body>
+	{{#if currentUser}}
+		{{> messages}}
+		{{> users}}
+		{{> input}}
+	{{else}}
+		{{> loginButtons}}
+	{{/if}}
+</body>
+
+<template name="messages">
+	<div class="messages">
+		{{#each messages}}
+			<div>
+				<div class="username text-muted">{{getUser username}}:</div> {{text}}
+			</div>
+		{{/each}}
+	</div>
+</template>
+
+<template name="users">
+	<div class="users">
+		{{> loginButtons}}
+		{{#each users}}
+			<div>
+				{{username}}
+			</div>
+		{{/each}}
+	</div>
+</template>
+
+<template name="input">
+	<div class="input" contenteditable="true"></div>
+</template>
